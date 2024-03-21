@@ -1,0 +1,28 @@
+h1 {
+  color: cornflowerblue;
+}
+/* The reason I chose this styling is a s follows:
+1) I really like the cornflower blue and the purple hues that match with it. I enjoy colour schemes that remind me of the sky at twilight and sunrise
+2) I chose the courier new fontface as it is simple but always looks neat and tidy.
+3) I wanted to do a pretty background  */
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+h3 {
+  color: cornflowerblue;
+}
+p {
+  color: darkslateblue;
+}
+ul {
+  color: darkslateblue;
+}
+footer {
+  color: cornflowerblue;
+}
+nav {
+  font-family: "Courier New", Courier, monospace;
+}

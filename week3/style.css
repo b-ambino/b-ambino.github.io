@@ -1,0 +1,40 @@
+* {
+  color: blueviolet;
+}
+h1 {
+  color: plum;
+}
+
+p {
+  color: plum;
+}
+
+h2 {
+  color: salmon;
+}
+
+h3 {
+  color: cornflowerblue;
+}
+
+li {
+  color: darkseagreen;
+}
+
+.my-colors {
+  color: cadetblue;
+}
+#last-para {
+  color: brown;
+}
+#instructor {
+  color: darkgreen;
+}
+
+[data-email="email"] {
+  color: blue;
+}
+
+li strong {
+  color: darkseagreen;
+}
