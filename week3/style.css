@@ -1,40 +1,27 @@
-* {
-  color: blueviolet;
-}
 h1 {
-  color: plum;
-}
+  font-size: 6rem;
+  text-transform: lowercase;
+  font-weight: 800;
+  padding-bottom: 20px;
+  color: mediumslateblue;
 
-p {
-  color: plum;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h2 {
-  color: salmon;
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: forestgreen;
+}
+
+p {
+  line-height: 1.4;
+  padding: 10px;
 }
 
 h3 {
-  color: cornflowerblue;
-}
-
-li {
-  color: darkseagreen;
-}
-
-.my-colors {
-  color: cadetblue;
-}
-#last-para {
-  color: brown;
-}
-#instructor {
-  color: darkgreen;
-}
-
-[data-email="email"] {
   color: blue;
-}
-
-li strong {
-  color: darkseagreen;
 }
