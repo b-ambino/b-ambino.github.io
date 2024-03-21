@@ -15,6 +15,7 @@ p {
 }
 ul {
   color: darkslateblue;
+  font-family: "Courier New", Courier, monospace;
 }
 footer {
   color: cornflowerblue;
