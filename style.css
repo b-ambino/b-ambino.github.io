@@ -6,14 +6,16 @@ h1 {
   font-size: 5.5rem;
   text-align: center;
 }
-h2 {
+h3 {
   font-family: "Courier New", Courier, monospace;
-  font-size: larger;
   color: white;
+  font-weight: 600;
   font-style: italic;
-  padding: 1rem 1rem 1rem 6rem;
+  text-align: center;
 }
-
+p {
+  color: darkslateblue;
+}
 ul {
   color: darkslateblue;
   font-family: "Courier New", Courier, monospace;
@@ -35,6 +37,9 @@ nav {
   opacity: 50%;
 }
 
+p {
+  font-family: "Courier New", Courier, monospace;
+}
 body {
   background-image: linear-gradient(
     to bottom,
@@ -50,27 +55,19 @@ a {
   text-decoration: none;
 }
 
-li {
-  padding: 0.5rem;
-  padding-left: 6rem;
-  padding-bottom: 1rem;
+p {
+  padding: 1rem 1rem 1rem 1rem;
+  padding-left: 1rem;
 }
 
-aside {
-  color: darkslateblue;
-  font-family: "Pirata One", system-ui;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 2 rem;
-  text-align: right;
-  padding-right: 1rem;
+h3 {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+li {
+  padding: 0.5rem;
 }
 
 header {
-}
-
-div {
-  padding: 1rem 6rem 1rem 6rem;
-  font-family: "Courier New", Courier, monospace;
-  color: darkslateblue;
+  opacity: 40%;
 }
