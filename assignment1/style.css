@@ -10,6 +10,10 @@ body {
   font-optical-sizing: auto;
   justify-content: center;
   align-items: center;
+  /* I wanted to choose a sunset inspired colour 
+  palette with white accents to create a simple design 
+  that is impactful, whilst still soft.
+  I Liked the gradient for this as it resembles a sunset. */
 }
 
 h1 {
@@ -28,18 +32,24 @@ h2 {
   text-align: center;
   padding-bottom: 1rem;
 }
+/* I Chose the font 'Pirata One' as it has a sort of gothic 
+aesthetic to it, and I really enjoy the combination of a 
+visually striking sharpness in juxtaposition with egregiously soft and pink. 
+This font resembles 'Old London'
+a commonly used gothic font that I quite enjoy.  */
 p {
   font-family: "Courier New", Courier, monospace;
   color: darkslateblue;
   font-size: 1.2rem;
 }
+/* I chose the slate blue for the paragraph texts as it highly contrasts
+the white headings, but still is visually strong against the background.
+Its also tonally monochromatic with the colour palette in the background. */
 ul {
   color: darkslateblue;
   font-family: "Courier New", Courier, monospace;
 }
-footer {
-  color: cornflowerblue;
-}
+
 nav {
   text-align: center;
   font-size: 1.5rem;
@@ -53,6 +63,11 @@ nav {
   padding-top: 1rem;
   opacity: 50%;
 }
+/* I wanted the Nav Bar to be incredibly simple and soft, 
+so i created a lower opactiy to keep the headings in the background 
+on each page. I felt that using anything too dark made the composition 
+look overwhelming, and I wanted to keep the websites design quite clean 
+and simple.  */
 
 a {
   color: darkslateblue;
@@ -63,16 +78,8 @@ li {
   padding: 5px;
   list-style-type: none;
 }
-
-aside {
-  color: darkslateblue;
-  font-family: "Pirata One", system-ui;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 2 rem;
-  text-align: right;
-  padding-right: 1rem;
-}
+/* I removed the bullet points and added my own heart symbol
+as I felt like it was a cuter design choice. */
 
 #grid-container {
   justify-content: space-around;
@@ -84,14 +91,21 @@ aside {
   gap: 4rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+/* I felt like the list question threw off my design 
+a lot due to the shape of the box,
+so I wanted to create a more evenly spaced container using extra rows.  */
 
 #grid-container > * {
   min-width: 100%;
   min-height: 100%;
   padding: 15px;
   border: 3px dotted whitesmoke;
+  border-radius: 25px;
 }
-
+/* I like the borders and how they add a sort of star like effect
+almost to each question box. I chose the dots as they keep it light 
+and airy whilst creating clean sectioning. I chose to round the corners as it 
+matches the aesthetic I was aiming for better than the square borders.  */
 #box1 {
   grid-column-start: 1;
   grid-column-end: 3;
