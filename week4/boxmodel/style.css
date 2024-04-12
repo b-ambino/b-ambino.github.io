@@ -23,8 +23,10 @@ h1 {
   width: 400px;
   min-height: 200px;
   display: flex;
-  justify-content: space-evenly
-  align-items:center    
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
   /* flex-direction: column; */
 
   /* line-height: 160px; */
@@ -36,5 +38,5 @@ p {
   width: 100px;
   /* height: 100px; */
   background-color: chocolate;
-  margin: 10px;
+  /* margin: 10px; */
 }
