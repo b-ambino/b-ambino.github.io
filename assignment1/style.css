@@ -23,7 +23,12 @@ h1 {
   font-style: italic;
   font-size: 7rem;
   text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
+/* I Chose white and white smoke for the headings so they would be the 
+focus of the webpage. By adding high contrast I felt like
+it made the page visually more eyecatching and easy to read. */
 h2 {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.5rem;
@@ -158,4 +163,22 @@ matches the aesthetic I was aiming for better than the square borders.  */
 #box13 {
   grid-column-start: 4;
   grid-column-end: 7;
+}
+#box14 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  border: none;
+}
+/* I added a span so I could have a subheading that 
+was basically the same as the question headings but 
+with a softer look so it stayed more in the background. 
+Hence the opacity choice.  */
+span {
+  opacity: 60%;
+}
+
+/* I didnt want the image to be sharper than the borders
+on the containers so I set the borders to be the same. */
+img {
+  border-radius: 25px;
 }
