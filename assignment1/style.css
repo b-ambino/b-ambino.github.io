@@ -54,7 +54,11 @@ ul {
   color: darkslateblue;
   font-family: "Courier New", Courier, monospace;
 }
-
+/* I made the nav like this due to the strike and not knowing about the grid containers
+until a few days before the due date. It took me far to long to get the nav working
+ in this way so I am too scared to change it when the assignment is 
+ due in a few days in case I ruin my website. 
+ I will attempt to adjust it in the future!  */
 nav {
   text-align: center;
   font-size: 1.5rem;
