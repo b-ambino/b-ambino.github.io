@@ -1,0 +1,188 @@
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #b1b2ff,
+    #ceacf4,
+    #e4a7e6,
+    #f5a3d4,
+    #ffa2c2
+  );
+  font-optical-sizing: auto;
+  justify-content: center;
+  align-items: center;
+  /* I wanted to choose a sunset inspired colour 
+    palette with white accents to create a simple design 
+    that is impactful, whilst still soft.
+    I Liked the gradient for this as it resembles a sunset. */
+}
+
+h1 {
+  color: whitesmoke;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 7rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+/* I Chose white and white smoke for the headings so they would be the 
+  focus of the webpage. By adding high contrast I felt like
+  it made the page visually more eyecatching and easy to read. */
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+/* I Chose the font 'Pirata One' as it has a sort of gothic 
+  aesthetic to it, and I really enjoy the combination of a 
+  visually striking sharpness in juxtaposition with egregiously soft and pink. 
+  This font resembles 'Old London'
+  a commonly used gothic font that I quite enjoy.  */
+p {
+  font-family: "Courier New", Courier, monospace;
+  color: darkslateblue;
+  font-size: 1.2rem;
+}
+/* I chose the slate blue for the paragraph texts as it highly contrasts
+  the white headings, but still is visually strong against the background.
+  Its also tonally monochromatic with the colour palette in the background. */
+ul {
+  color: darkslateblue;
+  font-family: "Courier New", Courier, monospace;
+}
+/* I made the nav like this due to the strike and not knowing about the grid containers
+  until a few days before the due date. It took me far to long to get the nav working
+   in this way so I am too scared to change it when the assignment is 
+   due in a few days in case I ruin my website. 
+   I will attempt to adjust it in the future!  */
+nav {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: italic;
+  word-spacing: 6rem;
+  letter-spacing: 0.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  opacity: 50%;
+}
+/* I wanted the Nav Bar to be incredibly simple and soft, 
+  so i created a lower opactiy to keep the headings in the background 
+  on each page. I felt that using anything too dark made the composition 
+  look overwhelming, and I wanted to keep the websites design quite clean 
+  and simple.  */
+
+a {
+  color: darkslateblue;
+  text-decoration: none;
+}
+
+li {
+  padding: 5px;
+  list-style-type: none;
+}
+/* I removed the bullet points and added my own heart symbol
+  as I felt like it was a cuter design choice. */
+
+#grid-container {
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 50px;
+  min-width: auto;
+  min-height: auto;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+/* I felt like the list question threw off my design 
+  a lot due to the shape of the box,
+  so I wanted to create a more evenly spaced container using extra rows.  */
+
+#grid-container > * {
+  min-width: 100%;
+  min-height: 100%;
+  padding: 15px;
+  border: 3px dotted whitesmoke;
+  border-radius: 25px;
+}
+/* I like the borders and how they add a sort of star like effect
+  almost to each question box. I chose the dots as they keep it light 
+  and airy whilst creating clean sectioning. I chose to round the corners as it 
+  matches the aesthetic I was aiming for better than the square borders.  */
+#box1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#box2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+#box3 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+#box4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#box5 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+#box6 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#box7 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+#box8 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#box9 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+#box10 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#box11 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+#box12 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#box13 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+#box14 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  border: none;
+}
+/* I added a span so I could have a subheading that 
+  was basically the same as the question headings but 
+  with a softer look so it stayed more in the background. 
+  Hence the opacity choice.  */
+span {
+  opacity: 60%;
+}
+
+/* I didnt want the image to be sharper than the borders
+  on the containers so I set the borders to be the same. */
+img {
+  border-radius: 25px;
+}
