@@ -14,7 +14,7 @@ function playPauseVideo() {
     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
     myVideo.play();
   } else {
-    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
+    playPauseImg.src = "https://img.icons8.com/carbon-copy/100/play.png";
     myVideo.pause();
   }
 }

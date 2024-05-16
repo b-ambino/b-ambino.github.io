@@ -1,38 +1,61 @@
-:root {
-  background-image: radial-gradient(
-    circle,
-    #000000,
-    #2e0b1d,
-    #53023d,
-    #710069,
-    #8500a1,
-    #8500a1,
-    #8500a1,
-    #8500a1,
-    #710069,
-    #53023d,
-    #2e0b1d,
-    #000000
-  );
-  --text-color: whitesmoke;
-  --main-bg-color: #000;
-  --main-text-color: whitesmoke;
-  --main-btn-bg-color: #ffffff;
+body {
+  background: linear-gradient(133deg, #04a381, #446faa, #39948d, #66b1b6);
+  background-size: 800% 800%;
+
+  -webkit-animation: background 23s ease infinite;
+  -moz-animation: background 23s ease infinite;
+  animation: background 23s ease infinite;
+}
+
+@-webkit-keyframes background {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes background {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes background {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
 }
 
 h1 {
-  font-family: "Jacquard 24", system-ui;
-  color: #e9a1ff;
+  font-family: "orbitron", system-ui;
+  color: #ffffff;
   font-size: 8rem;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
+  font-size: 5rem;
+  padding: 2rem;
 }
 
 h2 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "orbitron", system-ui;
   font-size: 1.5rem;
   color: white;
-  font-style: italic;
+  font-style: normal;
   padding-bottom: 1rem;
 }
 p,
@@ -134,7 +157,7 @@ nav a {
 .progress-bar {
   width: 100%;
   height: 10px;
-  background-color: #ddd;
+  background-color: #e5e5cb68;
   margin-top: 10px;
   overflow: hidden;
 }
@@ -142,7 +165,7 @@ nav a {
 .progress-bar span {
   display: block;
   height: 100%;
-  background-color: var(--main-bg-color);
+  background-color: coral;
   width: 0;
   transition: width 0.3s ease;
 }

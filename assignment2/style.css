@@ -1,64 +1,100 @@
 body {
-  background-image: linear-gradient(
-    to bottom,
-    #b1b2ff,
-    #ceacf4,
-    #e4a7e6,
-    #f5a3d4,
-    #ffa2c2
-  );
-  font-optical-sizing: auto;
-  justify-content: center;
-  align-items: center;
-  /* I wanted to choose a sunset inspired colour 
-    palette with white accents to create a simple design 
-    that is impactful, whilst still soft.
-    I Liked the gradient for this as it resembles a sunset. */
+  background: linear-gradient(133deg, #04a381, #446faa, #39948d, #66b1b6);
+  background-size: 800% 800%;
+
+  -webkit-animation: background 23s ease infinite;
+  -moz-animation: background 23s ease infinite;
+  animation: background 23s ease infinite;
+}
+
+@-webkit-keyframes background {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes background {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes background {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
 }
 
 h1 {
-  color: whitesmoke;
-  font-family: "Pirata One", system-ui;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 7rem;
-  text-align: center;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  font-family: "orbitron", system-ui;
+  color: #ffffff;
+  font-size: 8rem;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 5rem;
+  padding: 2rem;
 }
-/* I Chose white and white smoke for the headings so they would be the 
-  focus of the webpage. By adding high contrast I felt like
-  it made the page visually more eyecatching and easy to read. */
+
 h2 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "orbitron", system-ui;
   font-size: 1.5rem;
   color: white;
-  font-style: italic;
-  text-align: center;
+  font-style: normal;
   padding-bottom: 1rem;
 }
-/* I Chose the font 'Pirata One' as it has a sort of gothic 
-  aesthetic to it, and I really enjoy the combination of a 
-  visually striking sharpness in juxtaposition with egregiously soft and pink. 
-  This font resembles 'Old London'
-  a commonly used gothic font that I quite enjoy.  */
-p {
-  font-family: "Courier New", Courier, monospace;
-  color: darkslateblue;
-  font-size: 1.2rem;
-}
-/* I chose the slate blue for the paragraph texts as it highly contrasts
-  the white headings, but still is visually strong against the background.
-  Its also tonally monochromatic with the colour palette in the background. */
+p,
 ul {
-  color: darkslateblue;
-  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
 }
-/* I made the nav like this due to the strike and not knowing about the grid containers
-  until a few days before the due date. It took me far to long to get the nav working
-   in this way so I am too scared to change it when the assignment is 
-   due in a few days in case I ruin my website. 
-   I will attempt to adjust it in the future!  */
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+/* Add additional styles as needed */
+
+/* Create a container for the main content */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  /* padding-bottom: 10px; */
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  width: 100%;
+}
+
+/* Navigation styling */
+/* nav {
+  margin-top: 20px;
+  text-align: center; */
 nav {
   text-align: center;
   font-size: 1.5rem;
@@ -72,117 +108,73 @@ nav {
   padding-top: 1rem;
   opacity: 50%;
 }
-/* I wanted the Nav Bar to be incredibly simple and soft, 
-  so i created a lower opactiy to keep the headings in the background 
-  on each page. I felt that using anything too dark made the composition 
-  look overwhelming, and I wanted to keep the websites design quite clean 
-  and simple.  */
 
-a {
-  color: darkslateblue;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
-li {
-  padding: 5px;
-  list-style-type: none;
-}
-/* I removed the bullet points and added my own heart symbol
-  as I felt like it was a cuter design choice. */
-
-#grid-container {
-  justify-content: space-around;
-  align-items: baseline;
-  margin: 50px;
-  min-width: auto;
-  min-height: auto;
-  display: grid;
-  gap: 4rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-/* I felt like the list question threw off my design 
-  a lot due to the shape of the box,
-  so I wanted to create a more evenly spaced container using extra rows.  */
-
-#grid-container > * {
-  min-width: 100%;
-  min-height: 100%;
-  padding: 15px;
-  border: 3px dotted whitesmoke;
-  border-radius: 25px;
-}
-/* I like the borders and how they add a sort of star like effect
-  almost to each question box. I chose the dots as they keep it light 
-  and airy whilst creating clean sectioning. I chose to round the corners as it 
-  matches the aesthetic I was aiming for better than the square borders.  */
-#box1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-#box2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
-#box3 {
-  grid-column-start: 5;
-  grid-column-end: 7;
-}
-#box4 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-#box5 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-}
-#box6 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-#box7 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-}
-#box8 {
-  grid-column-start: 1;
-  grid-column-end: 4;
+/* Media player styling */
+.media-player {
+  width: 100%;
+  margin: 0 auto;
 }
 
-#box9 {
-  grid-column-start: 4;
-  grid-column-end: 7;
+.media-player video {
+  max-width: 100%;
 }
-#box10 {
-  grid-column-start: 1;
-  grid-column-end: 4;
+
+.custom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  width: 100%;
 }
-#box11 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-}
-#box12 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-#box13 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-}
-#box14 {
-  grid-column-start: 1;
-  grid-column-end: 7;
+
+.custom-controls button {
+  background-color: var(--main-btn-bg-color);
+  color: var(--main-text-color);
   border: none;
-}
-/* I added a span so I could have a subheading that 
-  was basically the same as the question headings but 
-  with a softer look so it stayed more in the background. 
-  Hence the opacity choice.  */
-span {
-  opacity: 60%;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 
-/* I didnt want the image to be sharper than the borders
-  on the containers so I set the borders to be the same. */
-img {
-  border-radius: 25px;
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e5e5cb68;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: coral;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
 }
