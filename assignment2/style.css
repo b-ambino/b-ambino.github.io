@@ -41,7 +41,23 @@ body {
   }
 }
 
-h1 {
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: "orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+.heading-one {
   font-family: "orbitron", system-ui;
   color: #ffffff;
   font-size: 8rem;
@@ -51,50 +67,110 @@ h1 {
   padding: 2rem;
 }
 
-h2 {
-  font-family: "orbitron", system-ui;
-  font-size: 1.5rem;
-  color: white;
-  font-style: normal;
-  padding-bottom: 1rem;
-}
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Courier New", Courier, monospace;
-  background-color: var(--primary-bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
+.outer {
+  width: 90%;
+  min-height: 500px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+  /* flex-wrap: wrap; */
+}
+
+img {
+  cursor: pointer;
+}
+
+.inner {
+  background-color: #04a381;
+  width: 200px;
+  height: 100px;
+  margin: 10px auto;
+  padding: 10px;
+  /* line-height: 80px; */
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.audio-container {
+  display: flex;
+  gap: 1rem;
+
+  /* flex-wrap: wrap; */
+}
+
+.audio-container > audio {
+  /* flex: 1; */
+  max-width: 100%;
+}
+
+.audio-container {
+  display: flex;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+}
+
+.audio-container > audio {
+  /* flex: 1; */
+  max-width: 100%;
+}
+
+.audio-controls,
+.timeline {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.audio-controls button {
+  width: 64px;
+  background-color: #9fcbc4;
+  border: none;
+  border-radius: 80%;
   align-items: center;
+  
+}
+
+.audio-controls button img {
+  padding: 8px;
+  align-self: center;
+  align-items: flex;
+}
+
+.timeline button {
+  padding: 0 10px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.audio-title {
+  display: flex;
   justify-content: space-between;
-  margin: 0px;
 }
 
-/* Add additional styles as needed */
+.audio-title h1 {
+  font-size: 1.2rem;
+}
 
-/* Create a container for the main content */
-.container {
-  max-width: 1000px;
+.progress-bar {
   width: 100%;
-  /* padding-bottom: 10px; */
+  height: 30px;
+  background-color: #e5e5cb68;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 50px;
 }
 
-/* Header styling */
-header {
-  text-align: center;
-  width: 100%;
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: #07594194;
+  width: 0;
+  transition: width 0.3s ease;
 }
 
-/* Navigation styling */
-/* nav {
-  margin-top: 20px;
-  text-align: center; */
 nav {
   text-align: center;
   font-size: 1.5rem;
@@ -106,6 +182,7 @@ nav {
   padding-right: 1rem;
   padding-left: 1rem;
   padding-top: 1rem;
+  color: whitesmoke;
   opacity: 50%;
 }
 
@@ -122,59 +199,4 @@ nav ul li {
 nav a {
   text-decoration: none;
   color: var(--text-color);
-}
-
-/* Media player styling */
-.media-player {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.media-player video {
-  max-width: 100%;
-}
-
-.custom-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 10px;
-  width: 100%;
-}
-
-.custom-controls button {
-  background-color: var(--main-btn-bg-color);
-  color: var(--main-text-color);
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 10px;
-  background-color: #e5e5cb68;
-  margin-top: 10px;
-  overflow: hidden;
-}
-
-.progress-bar span {
-  display: block;
-  height: 100%;
-  background-color: coral;
-  width: 0;
-  transition: width 0.3s ease;
-}
-
-/* Footer styling */
-footer {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  text-align: center;
-  padding: 10px 0;
-  width: 100%;
 }

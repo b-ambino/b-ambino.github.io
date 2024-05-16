@@ -20,7 +20,6 @@ body {
 }
 
 .outer {
-  border: 2px dashed #e5e5cb68;
   max-width: 900px;
   min-height: 200px;
   padding: 10px;
@@ -54,21 +53,22 @@ img {
   /* flex-wrap: wrap; */
 }
 
-.video-container > audio {
+.video-container > video {
   /* flex: 1; */
   max-width: 100%;
 }
 
-.audio-container {
+.video-container {
   display: flex;
   gap: 1rem;
   /* flex-wrap: wrap; */
 }
 
-.audio-container > audio {
+.video-container > video {
   /* flex: 1; */
   max-width: 100%;
 }
+
 
 .video-list {
   display: flex;

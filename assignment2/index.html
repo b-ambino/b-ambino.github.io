@@ -1,9 +1,18 @@
+<!-- this is how i make a commenet explaining why i chose the semantics i did.
+I wanted the video to take centre stage,  it should be large enough and have all 
+its controls underneath.
+So to achieve this, I went for a flex:column layout where I divided
+the centre box into three sections
+1.video-container: this section contains the video
+2.video-controls: this section contains the buttons to control the video
+3.timeline: this section allows navigating to different time stamps -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Video Player Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -13,67 +22,85 @@
       href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
       rel="stylesheet"
     />
-
-
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer> </script>
+    <script src="script.js" defer></script>
   </head>
   <body>
- 
     <nav>
-        <a href="../assignment1/index.html">A1</a>
-        <a href="#">A2</a>
-        <a href="../assignment3/index.html">A3</a>
-        <a href="../index.html">Home</a>
-      </nav>
-      <header> <h1>music for relaxation and study</h1></header>
-      <main>
-        
-      </main>
+      <a href="../assignment1/index.html">A1</a>
+      <a href="#">A2</a>
+      <a href="../assignment3/index.html">A3</a>
+      <a href="../index.html">Home</a>
     </nav>
+<div class="heading-one">
+Music For Study and Focus
 
-    <!-- Main Content Section -->
-    <main class="container">
-      <div class="media-player">
-        <section id="video-container">
-        <video id="meditation-video" src="meditation.mp4" controls autoplay loop>
-        </video>
-        </section>
-         <!-- Media Player Section -->
-         <section id=""
-        <audio id="audio" src="erokia_ambient-wave-56-msfxp7-78.mp3" type="audio/mp3"></audio>
-        <div class="custom-controls">
-          <button id="play-pause-button" onclick="togglePlayPause()">
-            <img
+</div>
+
+    <div class="outer">
+      <section class="audio">
+        <audio src="erokia_ambient-wave-56-msfxp7-78.mp3" id="my-audio"></audio>
+      </section>
+      <section class="audio-player">
+       
+      </section>
+      <section class="audio-controls">
+        <button id="play-pause-btn">
+          <img
             id="play-pause-img"
-            width="64" 
-            height="64" 
-            src="https://img.icons8.com/glyph-neue/64/FFFFFF/start.png" 
-            />
-          </button>
-          </div>
-          <div class="progress-bar">
-            <span id="progress-bar-fill"></span>
-          </div>
-        
-      
-
-      <!-- Additional Content Section -->
-      <div class="currently-playing">
-        <h2>Currently Playing: Erokia - Ambient Wave 56 </h2>
-        <p></p>
-        <!-- Add more content as needed -->
-      </div>
-
-      <div class="ambient-sound-controls">
-      </div>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-      <p>&copy; 2024 Media Player Website. All rights reserved.</p>
-    <a  href="https://icons8.com/icon/121700/pause-button">Pause Button</a> icon by <a href="https://icons8.com">Icons8</a>
-    </footer>
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/play--v1.png"
+            alt="Play Button"
+            width="48"
+            height="48"
+          />
+        </button>
+        <div class="progress-bar">
+          <span id="progress-bar-fill"> </span>
+        </div>
+        <button id="decrease-volume-btn">
+            <img
+              id="decrease-volume-img"
+              src="https://img.icons8.com/ios-filled/50/FFFFFF/low-volume.png"
+              alt="Decrease Volume Button"
+              width="48"
+              height="48"
+              />
+        <button id="increase-volume-btn">
+            <img
+                id="increase-volume-img"
+                src="https://img.icons8.com/ios-filled/50/FFFFFF/speaker.png"
+                alt="Increase Volume Button"
+                width="48"
+                height="48"
+                />
+                <button id="mute-unmute-btn">
+                  <img
+                    id="mute-unmute-img"
+                    src="https://img.icons8.com/ios-filled/50/FFFFFF/mute--v1.png"
+                    alt="Mute Button"
+                    width="48"
+                    height="48"
+                  />
+                  </button>
+                </section>
+                <section class="messages">
+                  
+                </section>
+        <!-- <button id="fullscreen-btn">
+          <img
+            id="fullscreen-img"
+            src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+            alt="Fullscreen Button"
+            width="48"
+            height="48"
+          /> -->
+        </button>
+      </section>
+      <!-- <section class="timeline">
+        <button id="step-one-btn">step one</button>
+        <button id="step-two-btn">step two</button>
+      </section> -->
+    </div>
   </body>
 </html>

@@ -178,3 +178,11 @@ footer {
   padding: 10px 0;
   width: 100%;
 }
+
+h2 {
+  font-family: "orbitron", system-ui;
+  font-size: 1.5rem;
+  color: white;
+  font-style: normal;
+  padding-bottom: 1rem;
+}
