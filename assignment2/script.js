@@ -13,9 +13,11 @@ console.log(playPauseImg);
 
 function playPauseAudio() {
   if (myAudio.paused || myAudio.ended) {
+    playPauseButton.style.backgroundColor = "#076757";
     playPauseImg.src = "https://img.icons8.com/glyph-neue/64/FFFFFF/pause.png";
     myAudio.play();
   } else {
+    playPauseButton.style.backgroundColor = "#9fcbc4";
     playPauseImg.src =
       "https://img.icons8.com/ios-filled/50/FFFFFF/play--v1.png";
     myAudio.pause();
@@ -36,7 +38,7 @@ function toggleSound() {
     muteUnmuteButton.style.backgroundColor = "#9fcbc4";
     myAudio.muted = false;
   } else {
-    muteUnmuteButton.style.backgroundColor = "#7b9b95";
+    muteUnmuteButton.style.backgroundColor = "#076757";
     myAudio.muted = true;
   }
 }
@@ -129,15 +131,104 @@ function updateVolume() {
 
 // this section will introduce a randomizer for positive affirmations
 
-const msg = [
-  "You've Got This!",
-  "Keep Going!",
-  "Deep Breaths...",
-  "You're On Your Way!",
-  "Slay Mama!",
-  "Kudos For Trying Your Best!",
-];
+// const msg = [
+//   "You've Got This!",
+//   "Keep Going!",
+//   "Deep Breaths...",
+//   "You're On Your Way!",
+//   "Slay Mama!",
+//   "Kudos For Trying Your Best!",
+// ];
 
-const messages = document.querySelector("messages");
-const randomNo = Math.floor(Math.random() * 6);
-heading.textContent = msg[randomNo];
+// const messages = document.querySelector("messages");
+// const randomNo = Math.floor(Math.random() * 6);
+// messages.textContent = msg[randomNo];
+
+//--------------------------------------------
+
+// ambience
+
+const rainAudio = document.querySelector("#rain-audio");
+console.log(rainAudio);
+
+const rainAudioBtn = document.querySelector("#rain");
+
+rain.addEventListener("click", playRainAudio);
+
+function playRainAudio() {
+  if (rainAudio.paused || rainAudio.ended) {
+    rainAudioBtn.style.backgroundColor = "#076757";
+    rainAudio.play();
+  } else {
+    rainAudioBtn.style.backgroundColor = "#9fcbc4";
+    rainAudio.pause();
+  }
+}
+
+const oceanAudio = document.querySelector("#ocean-audio");
+console.log(oceanAudio);
+
+const oceanAudioBtn = document.querySelector("#ocean");
+
+ocean.addEventListener("click", playOceanAudio);
+
+function playOceanAudio() {
+  if (oceanAudio.paused || oceanAudio.ended) {
+    oceanAudioBtn.style.backgroundColor = "#076757";
+    oceanAudio.play();
+  } else {
+    oceanAudioBtn.style.backgroundColor = "#9fcbc4";
+    oceanAudio.pause();
+  }
+}
+
+const riverAudio = document.querySelector("#river-audio");
+console.log(riverAudio);
+
+const riverAudioBtn = document.querySelector("#river");
+
+river.addEventListener("click", playRiverAudio);
+
+function playRiverAudio() {
+  if (riverAudio.paused || riverAudio.ended) {
+    riverAudioBtn.style.backgroundColor = "#076757";
+    riverAudio.play();
+  } else {
+    riverAudioBtn.style.backgroundColor = "#9fcbc4";
+    riverAudio.pause();
+  }
+}
+
+const transportAudio = document.querySelector("#transport-audio");
+console.log(transportAudio);
+
+const transportAudioBtn = document.querySelector("#transport");
+
+transport.addEventListener("click", playTransportAudio);
+
+function playTransportAudio() {
+  if (transportAudio.paused || transportAudio.ended) {
+    transportAudioBtn.style.backgroundColor = "#076757";
+    transportAudio.play();
+  } else {
+    transportAudioBtn.style.backgroundColor = "#9fcbc4";
+    transportAudio.pause();
+  }
+}
+
+const outdoorsAudio = document.querySelector("#outdoors-audio");
+console.log(outdoorsAudio);
+
+const outdoorsAudioBtn = document.querySelector("#outdoors");
+
+outdoors.addEventListener("click", playOutdoorsAudio);
+
+function playOutdoorsAudio() {
+  if (outdoorsAudio.paused || outdoorsAudio.ended) {
+    outdoorsAudioBtn.style.backgroundColor = "#076757";
+    outdoorsAudio.play();
+  } else {
+    outdoorsAudioBtn.style.backgroundColor = "#9fcbc4";
+    outdoorsAudio.pause();
+  }
+}
