@@ -1,3 +1,23 @@
+/* 
+For my design choices, I decided to create a CSS animation using teals, 
+blues and greens to add a calming ambience to the page. I also created the UI to match these colours 
+to ensure that the user could focus on their study/meditation whilst remaining in a calm state.
+
+I used a fontface that created a more futuristic vibe to match the sound of the ambient track.
+
+I also decided to use white buttons from icons8 as I felt the back was too harsh for the colour 
+palette.
+
+I kept the original font and NAV system from my first assignment to create a cohesiveness throughout 
+my website, but changed the colouring to match this specific page. 
+
+I made the footer stand out as to sort of finish off the page nicely whilst also ensuring the credit
+for the symbols and sounds were available.
+
+I made sure the media player buttons were circles to show they were seperate from the ambience 
+buttons which i kept rectangles. I also wanted the ambience to be able to stack so I made the buttons
+change colour whilst the audio was on. */
+
 body {
   background: linear-gradient(133deg, #04a381, #446faa, #39948d, #66b1b6);
   background-size: 800% 800%;
@@ -189,7 +209,6 @@ nav {
   letter-spacing: 0.25rem;
   padding-right: 1rem;
   padding-left: 1rem;
-  padding-top: 1rem;
   color: whitesmoke;
   opacity: 50%;
 }

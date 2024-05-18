@@ -1,7 +1,7 @@
 const myAudio = document.querySelector("#my-audio");
 console.log(myAudio);
 
-// the following code block allows me to play and pause the video on a click of a button
+// the following code block allows me to play and pause the audio track on a click of a button whilst also changing the icon and colour when pressed.
 
 const playPauseButton = document.querySelector("#play-pause-btn");
 console.log(playPauseButton);
@@ -26,7 +26,7 @@ function playPauseAudio() {
 
 //------------------------------------------------------
 
-//the following code allows me to control the sound via a mute and unmute function
+//the following code allows me to control the audio track via a mute and unmute function whilst also changing the colour on click.
 
 const muteUnmuteButton = document.querySelector("#mute-unmute-btn");
 console.log(muteUnmuteButton);
@@ -45,7 +45,7 @@ function toggleSound() {
 
 //------------------------------------------------------
 
-// the following code block illustrates progress bar
+// the following code block shows the progress of the audio track via a progress bar.
 
 myAudio.addEventListener("timeupdate", updateProgressBar);
 
@@ -57,50 +57,9 @@ function updateProgressBar() {
   progressBarFill.style.width = progress + "%";
 }
 
-//------------------------------------------------------
-
-// // the following code will make the video full screen
-
-// myAudio.addEventListener("dblclick", goFullscreen);
-
-// const fullscreenButton = document.querySelector("#fullscreen-btn");
-// console.log(fullscreenButton);
-
-// fullscreenButton.addEventListener("click", goFullscreen);
-
-// function goFullscreen() {
-//   if (!document.fullscreenElement) {
-//     myAudio.requestFullscreen();
-//   } else {
-//     document.exitFullscreen();
-//   }
-// }
-
-//--------------------------------------------------------
-
-// the following code block introduces timestamps
-
-// const stepOneButton = document.querySelector("#step-one-btn");
-// console.log(stepOneButton);
-
-// stepOneButton.addEventListener("click", gotoStepOne);
-
-// function gotoStepOne() {
-//   myAudio.currentTime = 16.0;
-// }
-
-// const stepTwoButton = document.querySelector("#step-two-btn");
-// console.log(stepTwoButton);
-
-// stepTwoButton.addEventListener("click", gotoStepTwo);
-
-// function gotoStepTwo() {
-//   myAudio.currentTime = 53.0;
-// }
-
 //---------------------------------------------------------
 
-// this section will introduce volume controls
+// this section will introduce volume controls for the main audio track.
 
 const increaseVolumeButton = document.querySelector("#increase-volume-btn");
 console.log(increaseVolumeButton);
@@ -129,7 +88,7 @@ function updateVolume() {
 
 //---------------------------------------------------------
 
-// this section will introduce a randomizer for positive affirmations
+// this section was me trying introduce a randomizer for positive affirmations. I was unable to figure out how to get this code to work, but have left it in to show my logic. Maybe in the feedback you could explain why it didnt work.
 
 // const msg = [
 //   "You've Got This!",
@@ -146,7 +105,7 @@ function updateVolume() {
 
 //--------------------------------------------
 
-// ambience
+// This section is creating the ambient button controls, I used a play pause function with text buttons and a change of colour to show the sound and when it was turned on and off.
 
 const rainAudio = document.querySelector("#rain-audio");
 console.log(rainAudio);
