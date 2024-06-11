@@ -40,7 +40,7 @@ function drop(ev) {
 
 // here is the array for the questions which will change when the user clicks next question
 
-const QUESTIONS = [
+const questions = [
   "What is the best season for holidays?",
   "What season encourages you to see friends?",
   "What season inspires you?",
@@ -49,23 +49,22 @@ const QUESTIONS = [
 
 let counter = 0;
 let display = document.querySelector("h3");
-display.innerText = QUESTIONS[counter];
+display.innerText = questions[counter];
 
-let btn = document.getElementById("next-question").innerHTML = Math.random();
+let btn = document.getElementById("next-question");
 
 btn.addEventListener("click", () => {
   counter++;
-  display.innerText = QUESTIONS[counter];
+  display.innerText = questions[counter];
 });
 
 // below is trying to get the next question button to reset the positions of the dragable answers. unfortunately I cannot get it working.
 
-// function reset1() {
-//   var wrapper = document.getElementById(".wrapper");
-//   wrapper.innerHTML = html;
-// }
-// var html;
-// window.onload = function () {
-//   html = document.getElementById(".wrapper").innerHTML;
-// };
+function reset1() {
+  var wrapper = document.getElementById(".wrapper");
+  wrapper.innerHTML = html;
 }
+var html;
+window.onload = function () {
+  html = document.getElementById(".wrapper").innerHTML;
+};
