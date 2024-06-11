@@ -5,7 +5,7 @@
 }
 
 body {
-  height: vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,6 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   width: 420px;
-  background: grey;
   justify-content: center;
 }
 
@@ -26,4 +25,9 @@ body {
   width: 160px;
   border-radius: 10px;
   border: 2px solid #333;
+}
+
+.box .image{
+    background-color: #333;
+
 }

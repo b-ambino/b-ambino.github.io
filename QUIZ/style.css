@@ -150,7 +150,7 @@ nav a {
 }
 
 footer {
-  background-color: #04a3818a;
+  background-color: #242424;
   height: 50px;
   width: 100%;
   text-align: center;
@@ -159,7 +159,6 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #9fcbc4;
 }
 
 .next-question button {
@@ -169,26 +168,14 @@ footer a {
   text-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 3rem;
+  font-style: italic;
   padding: 7px;
   width: 500px;
 }
 
-#next-question button {
-  height: 100px;
-  background-color: #423c61;
-  margin: 50px;
-  border-radius: 100px;
-  text-align: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 1.2em;
-  padding: 7px;
-  width: 80%;
-}
-
 button:hover {
-  background-color: mediumspringgreen;
+  background-color: darkslateblue;
   /* scale: 1.1; */
 }
 
@@ -208,7 +195,9 @@ button:hover {
   display: flex;
   justify-content: center;
   margin: auto;
-  background-color: darkorange;
+  border-style: dotted;
+  border-width: 3px;
+  
 }
 
 .image {
@@ -274,26 +263,31 @@ button:hover {
   border: #ffffff;
   border-style: solid;
   border-width: 10px;
+  scale: 1.10;
 }
 
 .image2:hover {
   border: #ffffff;
   border-style: solid;
   border-width: 10px;
+  scale: 1.1;
 }
 .image3:hover {
   border: #ffffff;
   border-style: solid;
   border-width: 10px;
+  scale: 1.1;
 }
 .image4:hover {
   border: #ffffff;
   border-style: solid;
   border-width: 10px;
+  scale: 1.1;
 }
 h4 {
   font-weight: 600;
   font-size: 4rem;
   color: whitesmoke;
-  -webkit-text-stroke: 3px #242424;
+  -webkit-text-stroke: 3px darkslateblue;
 }
+
