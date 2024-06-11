@@ -1,6 +1,23 @@
 <!-- This is my logic and reasoning for the elements I included in my media player design.
 
- -->
+1. I decided that since my media player was designed for focus and meditation, that I 
+would keep the design simple and without many distractions. I had the main audio player
+be the focus so the design was front and center, whilst having the added ambience buttons 
+below as an addition for the user. 
+
+2. I decided that since I was only able to use one audio, I would have a play/pause, 
+volume and mute buttons. This makes the UI simple for the user and ensures the design isnt too 
+overwhelming. 
+
+3. The ambient buttons are an addition for the user so they're able to add meditative sounds 
+to the main audio. I decided that from my own experience that using ambience like rain sounds 
+when studying along with music which is why I felt like adding this option would improve the 
+media player. 
+
+4. I also decided to add a subheading of motivational words. I know in class I was given some code
+to create a randomiser with an array but I could not figure out how to get it to work and I 
+tried really hard to! But I felt like I should try honour the idea the best I could so I added them
+as a subheading. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,8 +45,8 @@
   <body>
     <nav>
       <a href="../assignment1/index.html">A1</a>
-      <a href="../assignment2/index.html">A2</a>
-      <a href="#">A3</a>
+      <a href="#">A2</a>
+      <a href="../assignment3/index.html">A3</a>
       <a href="../index.html">Home</a>
     </nav>
     <div class="outer">
@@ -52,8 +69,8 @@
 <div id="wrapper">
     <div id="first">
                 <div class="answers">
-                    <div class="inner" id="text-answer" ondragover="allowDrop(event)" >
-                  <div class="image" draggable="true" ondragstart="drag(event)" id="drag1" >
+                    <div class="inner" id="text-answer" ondragover="allowDrop(event)">
+                  <div class="image" draggable="true" ondragstart="drag(event)" id="drag1">
                     <h4>summer</h4>
                 </div>
                         
@@ -98,7 +115,7 @@
 </div>
 
                 <div class="next-question">
-                <button id="next-question" onclick="window.location.href='../assignment3/question2/index.html'> <p>next question</p> </button>
+                <button id="next-question" onclick="reset"> <p>next question</p></button>
                 </div>
       </div>
     <footer> All images sourced from <a href ="unsplash.com"> unsplash.com</a></footer>

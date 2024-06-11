@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 420px;
+  background: grey;
+  justify-content: center;
+}
+
+.container .box {
+  position: relative;
+  height: 160px;
+  width: 160px;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
