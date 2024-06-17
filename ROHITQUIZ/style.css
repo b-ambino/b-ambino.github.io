@@ -1,32 +1,22 @@
 /* 
-For my design choices, I decided to create a gradient backdrop that was purple and charcoal,
-this was so the images of each season would be visible and highly contrasting. I decided
-to use the font face 'young serif' for the heading and afacad for the subsequent text as it created
-a clean typeface that was easy to read for the user. 
+For my design choices, I decided to create a CSS animation using teals, 
+blues and greens to add a calming ambience to the page. I also created the UI to match these colours 
+to ensure that the user could focus on their study/meditation whilst remaining in a calm state.
 
-I decided to have the buttons animate on hover with a white border and the text getting larger
-so it was clear to the user which choice they were making in the survey. I also had the destination
-for the answer box have a white dotted outline so it would match when the user decided to select an
-answer.
+I used a fontface that created a more futuristic vibe to match the sound of the ambient track.
 
-I decided to have the progress bar front and centre with the same purple and charcoal accents so it would
-match with the aesthetic of the website, but also stand out against the background so the user had
-good visibility of it. 
+I also decided to use white buttons from icons8 as I felt the back was too harsh for the colour 
+palette.
 
-I also included a next question button design that was complimentary, I wanted the button to have a tactile
-look to it so it stood out from the image answers without drawing too much attention away. 
+I kept the original font and NAV system from my first assignment to create a cohesiveness throughout 
+my website, but changed the colouring to match this specific page. 
 
-I decided to have a charcoal footer to credit the image sources as well as finish off the webpage in 
-a neat and tidy way.
+I made the footer stand out as to sort of finish off the page nicely whilst also ensuring the credit
+for the symbols and sounds were available.
 
-my goal was to create a survey experience that felt more interactive and fun than the usual multiple choice
-designs that I have used in the past. I believe the additions I have made will encourage more people to
-do surveys if implimented. 
-
-The challenges I see in the future would be perhaps time taken to do each quiz, and finding
-relevant images for every question if the subject matter was more thought based. I believe that
-this function could work well with brand reviews or personality based things, but more regimented
-company based things could prove difficult. */
+I made sure the media player buttons were circles to show they were seperate from the ambience 
+buttons which i kept rectangles. I also wanted the ambience to be able to stack so I made the buttons
+change colour whilst the audio was on. */
 
 body {
   background-image: linear-gradient(
@@ -83,7 +73,16 @@ h3 {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  /* gap: 1.5rem; */
+  /* flex-wrap: wrap; */
 }
+
+/* img {
+    cursor: pointer;
+    max-height: 100%;
+    border-radius: 10px;
+    object-fit: fill;
+  } */
 
 #progress-bar {
   width: 60%;
@@ -99,7 +98,7 @@ h3 {
 .progress-bar-fill {
   display: block;
   height: 100%;
-  background-color: #4c3f93;
+  background-color: #07594194;
   width: 0;
 }
 
@@ -177,14 +176,17 @@ footer a {
 
 button:hover {
   background-color: darkslateblue;
+  /* scale: 1.1; */
 }
 
 .wrapper {
   display: none;
+  /* hide all questions at the beginning  */
 }
 
 .show {
   display: flex;
+  /* to show only the right question  */
 }
 
 #first {

@@ -1,28 +1,10 @@
-// const progressBarFill = document.querySelector("#progress-bar-fill");
+const sections = document.querySelectorAll(".wrapper");
+console.log(sections);
 
-// progressBarFill.style.width = 33.33%;
+const progressBarFill = document.querySelector(".progress-bar-fill");
+let newWidth = 0;
 
-//DOM Elements
-// const boxes = document.querySelectorAll(".final"),
-//   image = document.querySelector(".inner");
-
-// //Loop through each boxes element
-// boxes.forEach((box) => {
-//   //When a draggable element dragged over a box element
-//   box.addEventListener("dragover", (e) => {
-//     e.preventDefault(); //Prevent default behaviour
-//   });
-
-//   //When a draggable element is dropped on a box elemen
-//   box.addEventListener("drop", () => {
-//     box.appendChild(getElement);
-//     box.classList.remove("hovered");
-//   });
-// });
-
-// the above is me trying to get the dragging to work but it not working, I would love feedback on why that code didnt work
-
-// below is how I managed to get the drag and drop to work.
+// below is how the survey will use a drag and drop feature to improve user joy and experience taking a survey.
 
 function allowDrop(ev) {
   ev.preventDefault();
@@ -36,9 +18,13 @@ function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
+  draggedElement = document.getElementById(data);
 }
 
 // here is the array for the questions which will change when the user clicks next question
+// When the user finishes all the questions, the survey will display a final message.
+// as the user answers questions, the progress bar will fill, allowing them to know how long
+// close they are to finishing the survey.
 
 const questions = [
   "What is the best season for holidays?",
@@ -54,17 +40,23 @@ display.innerText = questions[counter];
 let btn = document.getElementById("next-question");
 
 btn.addEventListener("click", () => {
-  counter++;
-  display.innerText = questions[counter];
+  if (counter < sections.length) {
+    sections[counter].classList.remove("show");
+    counter++;
+
+    if (counter != sections.length) {
+      display.innerText = questions[counter];
+      sections[counter].classList.add("show");
+    } else {
+      display.innerText = "Thank You For Answering All The Questions!";
+    }
+
+    newWidth += 25;
+    progressBarFill.style.width = newWidth + "%";
+  }
 });
 
-// below is trying to get the next question button to reset the positions of the dragable answers. unfortunately I cannot get it working.
-
-function reset1() {
-  var wrapper = document.getElementById(".wrapper");
-  wrapper.innerHTML = html;
-}
-var html;
-window.onload = function () {
-  html = document.getElementById(".wrapper").innerHTML;
-};
+// If I had more time and could find the easier solution, I would have made the next question display
+//a finished text box and figured out a reset button on the quiz to start it again for local use with different
+//users but since I am still a really amateur/beginner coder I was unable to find a good solution without it messing
+//up the rest of the code so I have left it for the time being.
